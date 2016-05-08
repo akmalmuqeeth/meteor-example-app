@@ -1,0 +1,13 @@
+<!--the starting point of the main layout-->
+<template name="layout">
+
+<!--
+inject the nav bar template. meteor will inject the template with name "nav" here
+-->
+{{> nav}}
+
+<!-- define where the content of a route should appear within the layout similar to ui-view in angular UI router.-->
+{{>yield}}
+
+
+</template>
